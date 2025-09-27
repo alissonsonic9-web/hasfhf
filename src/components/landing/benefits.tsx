@@ -17,6 +17,7 @@ const modules = [
   {
     icon: Ear,
     title: 'Módulo 1 – Método Prático para Desenvolver o Ouvido Musical',
+    imageUrl: 'https://i.postimg.cc/BnDLdQCX/metodo.png',
     content: [
       'Aprenda a treinar o ouvido de forma intuitiva, reconhecendo acordes, riffs, frases, solos e arranjos.',
       'Tudo direto na escuta, sem depender de cifras ou partituras.',
@@ -103,8 +104,8 @@ export function Benefits() {
                     <div className="p-1 h-full">
                       <Card className="flex flex-col h-full overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg">
                         <div className="relative h-48 w-full bg-muted">
-                          <Image 
-                            src={`https://picsum.photos/seed/${index + 10}/600/400`}
+                          <Image
+                            src={module.imageUrl || `https://picsum.photos/seed/${index + 10}/600/400`}
                             alt={module.title}
                             fill
                             className="object-cover"
@@ -138,8 +139,8 @@ export function Benefits() {
             {modules.map((module, index) => (
               <Card key={index} className="flex flex-col overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg transition-transform duration-300 hover:-translate-y-2">
                 <div className="relative h-48 w-full bg-muted">
-                  <Image 
-                    src={`https://picsum.photos/seed/${index + 10}/600/400`}
+                  <Image
+                    src={module.imageUrl || `https://picsum.photos/seed/${index + 10}/600/400`}
                     alt={module.title}
                     fill
                     className="object-cover"
@@ -166,11 +167,11 @@ export function Benefits() {
             ))}
           </div>
         </div>
-        <div className="flex justify-center mt-4 sm:mt-0">
+        <div className="flex justify-center sm:mt-0 mt-8">
           <a href="#pricing">
             <Button
               size="lg"
-              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 animate-jump shadow-green-500/50 hover:shadow-green-400/50"
+              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 animate-pulse-slow shadow-green-500/50 hover:shadow-green-400/50"
             >
               GARANTIR MEU PACK AGORA!
             </Button>
