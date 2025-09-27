@@ -132,7 +132,7 @@ export function Benefits() {
           <a href="#pricing">
             <Button
               size="lg"
-              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 bg-green-600 text-white hover:bg-green-700 mt-8 shadow-green-500/50 hover:shadow-green-400/50"
+              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 mt-8 shadow-green-500/50 hover:shadow-green-400/50 animate-jump"
             >
               GARANTIR MEU PACK AGORA!
             </Button>
