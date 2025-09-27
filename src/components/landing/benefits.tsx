@@ -80,6 +80,7 @@ const modules = [
   {
     icon: Mic,
     title: 'Módulo 8 – Método Flexível para Quem Toca em Diferentes Ambientes',
+    imageUrl: 'https://i.postimg.cc/YS6Xq7tp/ambiente.png',
     content: [
       'Aplique o método em qualquer cenário: sozinho, em grupo, na igreja ou em bares.',
       'Conteúdo versátil que pode ser usado para estudo ou para ensinar.',
