@@ -51,11 +51,11 @@ const modules = [
 
 export function Modules() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-accent text-accent-foreground">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">O que você vai ter acesso?</h2>
-          <p className="max-w-[900px] text-accent-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="max-w-[900px] text-primary-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Uma jornada completa, do básico ao avançado, para você dominar a arte de tocar de ouvido.
           </p>
         </div>

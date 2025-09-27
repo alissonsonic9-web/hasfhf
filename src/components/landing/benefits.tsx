@@ -36,11 +36,11 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-accent text-accent-foreground">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Com esse material você terá!</h2>
-          <p className="max-w-[900px] text-primary-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="max-w-[900px] text-accent-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Um conjunto de habilidades que vão transformar a sua relação com a música, independente do seu nível ou instrumento.
           </p>
         </div>
