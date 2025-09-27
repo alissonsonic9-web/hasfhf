@@ -5,48 +5,48 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Ear, TrendingUp, FlaskConical, Music2, Guitar, Library, AudioWaveform, Mic, Check } from 'lucide-react';
+import { Ear, TrendingUp, FlaskConical, Music, Guitar, Library, AudioWaveform, Mic } from 'lucide-react';
 import Image from 'next/image';
 
 const modules = [
   {
     icon: Ear,
-    title: 'Método Prático para Desenvolver o Ouvido Musical',
+    title: 'Módulo 1 – Método Prático para Desenvolver o Ouvido Musical',
     content: 'Você vai aprender a treinar o ouvido de forma intuitiva, reconhecendo acordes, riffs, frases, solos e arranjos em qualquer estilo. Tudo direto na escuta, sem depender de cifras ou partituras, desenvolvendo uma percepção musical mais natural.',
   },
   {
     icon: TrendingUp,
-    title: 'Exercícios Progressivos que Funcionam em Qualquer Instrumento',
+    title: 'Módulo 2 – Exercícios Progressivos que Funcionam em Qualquer Instrumento',
     content: 'Uma sequência de treinos graduais pensados para se adaptar a qualquer instrumento — do violão ao sax, da guitarra ao teclado. Os exercícios foram planejados para serem aplicados em qualquer música e contexto, acelerando seu domínio musical.',
   },
   {
     icon: FlaskConical,
-    title: 'Estufa de Percepção Auditiva na Prática',
+    title: 'Módulo 3 – Estufa de Percepção Auditiva na Prática',
     content: 'Aqui a ideia é treinar o ouvido em profundidade, aprendendo a separar instrumentos dentro de uma faixa musical. Você vai desenvolver sensibilidade para reconhecer timbres, frequências e intensidades, aplicando isso diretamente na prática, sem excesso de teoria.',
   },
   {
-    icon: Music2,
-    title: 'Treinamento de Escuta com Músicas Reais',
+    icon: Music,
+    title: 'Módulo 4 – Treinamento de Escuta com Músicas Reais',
     content: 'Nada de exercícios abstratos: neste módulo, você vai praticar com músicas conhecidas de artistas como Cartola, Djavan, Lulu Santos, Garota de Ipanema e muito mais. Assim, além de treinar, você aplica o aprendizado tocando junto com canções de verdade.',
   },
   {
     icon: Guitar,
-    title: 'Rotinas de Treino Técnico no Seu Instrumento',
+    title: 'Módulo 5 – Rotinas de Treino Técnico no Seu Instrumento',
     content: 'Aprenda a dominar técnicas como vibratos, bends, ligados, palhetada alternada e tapping, sempre com foco em clareza, controle e fluidez. As rotinas foram organizadas para você evoluir no seu instrumento de forma sólida e progressiva.',
   },
   {
     icon: Library,
-    title: 'Conceitos Teóricos Descomplicados e Aplicáveis',
+    title: 'Módulo 6 – Conceitos Teóricos Descomplicados e Aplicáveis',
     content: 'A teoria musical aqui é simples e prática: apenas o que você realmente precisa para entender o que ouve e aplicar no seu instrumento. Escalas, harmonia e fundamentos são apresentados sem enrolação, para virar conhecimento aplicado e não apenas teoria decorada.',
   },
   {
     icon: AudioWaveform,
-    title: 'Guia para Transformar Qualquer Música em Aprendizado Técnico',
+    title: 'Módulo 7 – Guia para Transformar Qualquer Música em Aprendizado Técnico',
     content: 'Cada música pode se tornar um exercício. Neste módulo você vai aprender a extrair solos, levadas, arranjos e acordes, mesmo quando parecem difíceis, usando uma abordagem que respeita seu tempo de evolução.',
   },
   {
     icon: Mic,
-    title: 'Método Flexível para Quem Toca em Diferentes Ambientes',
+    title: 'Módulo 8 – Método Flexível para Quem Toca em Diferentes Ambientes',
     content: 'Seja tocando sozinho, em grupo, na igreja ou em bares, este método foi feito para se encaixar em qualquer cenário musical. O conteúdo é tão versátil que você pode aplicar no seu estudo individual ou até usar para ensinar, se for professor.',
   },
 ];
@@ -74,10 +74,10 @@ export function Benefits() {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="flex items-start gap-2 text-base">
-                  <Check className="h-5 w-5 flex-shrink-0 text-green-500 mt-0.5" />
-                  <span className='text-card-foreground'>{module.title}</span>
-                </CardTitle>
+                <div className='p-4 bg-primary rounded-full inline-block'>
+                  <module.icon className="h-6 w-6 text-primary-foreground" />
+                </div>
+                <CardTitle className="text-base text-card-foreground">{module.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
                 <CardDescription>{module.content}</CardDescription>
