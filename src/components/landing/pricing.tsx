@@ -16,12 +16,12 @@ const includedItems = [
 
 export function Pricing() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-accent text-accent-foreground">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
       <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
         <div className="space-y-3">
           <div className="inline-block rounded-lg bg-white/10 px-3 py-1 text-sm font-semibold">OFERTA ESPECIAL</div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">GARANTA HOJE!</h2>
-          <p className="mx-auto max-w-[600px] text-accent-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Promoção de lançamento pode encerrar a qualquer momento. Não perca essa chance!
           </p>
         </div>
