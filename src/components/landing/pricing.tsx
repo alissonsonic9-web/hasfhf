@@ -21,11 +21,8 @@ export function Pricing() {
         <div className="space-y-3">
           <div className="inline-block rounded-lg bg-white/10 px-3 py-1 text-sm font-semibold">OFERTA ESPECIAL</div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">GARANTA HOJE!</h2>
-          <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Promoção de lançamento pode encerrar a qualquer momento. Não perca essa chance!
-          </p>
         </div>
-        <div className="mx-auto w-full max-w-md">
+        <div className="mx-auto w-full max-w-md pt-12">
           <Card className="bg-white text-black shadow-xl">
             <CardHeader className="text-center pb-2">
               <CardDescription className="text-2xl line-through text-muted-foreground">DE R$ 147,00</CardDescription>
