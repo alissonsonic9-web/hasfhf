@@ -107,7 +107,7 @@ export function Benefits() {
                   <CarouselItem key={index} className="basis-4/5">
                     <div className="p-1 h-full">
                       <Card className="flex flex-col h-full overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg">
-                        <div className="relative h-48 w-full bg-muted">
+                        <div className="relative w-full bg-muted aspect-square">
                           <Image
                             src={module.imageUrl || `https://picsum.photos/seed/${index + 10}/600/400`}
                             alt={module.title}
@@ -142,7 +142,7 @@ export function Benefits() {
           <div className="hidden sm:grid mx-auto grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {modules.map((module, index) => (
               <Card key={index} className="flex flex-col overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg transition-transform duration-300 hover:-translate-y-2">
-                <div className="relative h-48 w-full bg-muted">
+                <div className="relative w-full bg-muted aspect-square">
                   <Image
                     src={module.imageUrl || `https://picsum.photos/seed/${index + 10}/600/400`}
                     alt={module.title}
@@ -171,7 +171,7 @@ export function Benefits() {
             ))}
           </div>
         </div>
-        <div className="flex justify-center sm:mt-0 mt-8">
+        <div className="flex justify-center mt-8 sm:mt-0">
           <a href="#pricing">
             <Button
               size="lg"
