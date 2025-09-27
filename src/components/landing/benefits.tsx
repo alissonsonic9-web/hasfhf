@@ -26,6 +26,7 @@ const modules = [
   {
     icon: TrendingUp,
     title: 'Módulo 2 – Exercícios Progressivos que Funcionam em Qualquer Instrumento',
+    imageUrl: 'https://i.postimg.cc/Z0zZ3ZvX/cifra.png',
     content: [
       'Treinos graduais que se adaptam a qualquer instrumento (violão, sax, teclado, etc.).',
       'Exercícios aplicáveis em qualquer música, acelerando seu domínio musical.',
