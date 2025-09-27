@@ -53,6 +53,7 @@ const modules = [
   {
     icon: Guitar,
     title: 'Módulo 5 – Rotinas de Treino Técnico no Seu Instrumento',
+    imageUrl: 'https://i.postimg.cc/MGnWhswf/rotina.png',
     content: [
       'Domine técnicas como vibratos, bends, ligados e palhetada alternada.',
       'Rotinas organizadas para você evoluir de forma sólida e progressiva.',
