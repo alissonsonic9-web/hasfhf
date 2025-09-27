@@ -28,6 +28,31 @@ const benefits = [
   },
 ];
 
+const getCardColors = (index: number) => {
+  if (index < 2 || index > 3) {
+    // Orange cards
+    return {
+      card: 'bg-orange-500 text-white',
+      iconContainer: 'bg-white',
+      icon: 'text-orange-500',
+      iconFill: '#f97316',
+      title: '',
+      description: 'text-white/80',
+    };
+  } else {
+    // Blue cards
+    return {
+      card: 'bg-primary text-primary-foreground',
+      iconContainer: 'bg-accent',
+      icon: 'text-accent-foreground',
+      iconFill: 'white',
+      title: 'text-white',
+      description: 'text-primary-foreground/80',
+    };
+  }
+};
+
+
 export function Modules() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-[#2E435A] text-primary-foreground">
@@ -36,19 +61,22 @@ export function Modules() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Com esse <span className="text-orange-500">MATERIAL</span> você terá!</h2>
         </div>
         <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 lg:grid-cols-2 lg:gap-8">
-          {benefits.map((benefit, index) => (
-            <Card key={index} className={`shadow-lg rounded-3xl flex flex-col justify-center p-6 ${index % 2 === 0 ? 'bg-orange-500 text-white' : 'bg-card text-card-foreground'}`}>
-              <CardHeader className="items-center text-center p-0">
-                <div className={`p-2 rounded-full mb-4 ${index % 2 === 0 ? 'bg-white' : 'bg-accent'}`}>
-                  <Star className={`w-6 h-6 ${index % 2 === 0 ? 'text-orange-500' : 'text-accent-foreground'}`} fill={index % 2 === 0 ? '#f97316' : 'white'} />
-                </div>
-                <CardTitle className={`text-lg font-bold uppercase ${index % 2 !== 0 ? 'text-blue-900' : ''}`}>{benefit.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center p-0 mt-2">
-                <p className={`text-base font-extrabold ${index % 2 === 0 ? 'text-white/80' : 'text-muted-foreground'}`}>{benefit.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+          {benefits.map((benefit, index) => {
+            const colors = getCardColors(index);
+            return (
+              <Card key={index} className={`shadow-lg rounded-3xl flex flex-col justify-center p-6 ${colors.card}`}>
+                <CardHeader className="items-center text-center p-0">
+                  <div className={`p-2 rounded-full mb-4 ${colors.iconContainer}`}>
+                    <Star className={`w-6 h-6 ${colors.icon}`} fill={colors.iconFill} />
+                  </div>
+                  <CardTitle className={`text-lg font-bold uppercase ${colors.title}`}>{benefit.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center p-0 mt-2">
+                  <p className={`text-base font-extrabold ${colors.description}`}>{benefit.description}</p>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
