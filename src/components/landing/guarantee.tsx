@@ -7,13 +7,13 @@ const GuaranteeSeal = () => (
         <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
       </defs>
       <text>
-        <textPath href="#circlePath" className="text-2xl font-bold uppercase fill-gray-500 tracking-wider" startOffset="50%" text-anchor="middle">
+        <textPath href="#circlePath" className="text-2xl font-bold uppercase fill-white/80 tracking-wider" startOffset="50%" text-anchor="middle">
           Garantia de 7 dias • Garantia de 7 dias •
         </textPath>
       </text>
     </svg>
     <div className="absolute inset-0 flex items-center justify-center">
-      <div className="w-32 h-32 bg-orange-500 rounded-full flex items-center justify-center">
+      <div className="w-32 h-32 bg-primary rounded-full flex items-center justify-center">
         <span className="text-5xl font-bold text-white">07</span>
       </div>
     </div>
@@ -23,21 +23,21 @@ const GuaranteeSeal = () => (
 
 export function Guarantee() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#ff9d33]">
       <div className="container px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 items-center">
           <div className="flex justify-center lg:justify-start">
             <GuaranteeSeal />
           </div>
-          <div className="space-y-4 text-center lg:text-left">
-            <h2 className="text-3xl font-bold tracking-tighter text-gray-800 sm:text-4xl">Garantia Incondicional de 7 Dias</h2>
-            <p className="text-gray-600 md:text-xl">
+          <div className="space-y-4 text-center lg:text-left text-white">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Garantia Incondicional de 7 Dias</h2>
+            <p className="md:text-xl">
               Se dentro de 7 dias você não ficar satisfeito, devolvemos 100% do valor.
             </p>
-            <p className="text-green-600 font-semibold text-lg">
+            <p className="text-white/90 font-semibold text-lg">
               Sem perguntas. Sem burocracia.
             </p>
-            <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-500">
+            <div className="flex items-center justify-center lg:justify-start gap-2 text-white/80">
               <ShieldCheck className="w-5 h-5" />
               <span>Sua compra é 100% segura.</span>
             </div>
