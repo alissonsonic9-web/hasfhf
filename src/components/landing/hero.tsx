@@ -29,7 +29,7 @@ export function Hero() {
             <p className="max-w-[700px] text-lg text-neutral-200 md:text-xl">
               Chega de buscar acordes no Google a cada nova música. Desenvolva seu ouvido musical e ganhe a liberdade que você sempre quis.
             </p>
-            <Button variant="accent" size="lg" className="text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200">
+            <Button variant="accent" size="lg" className="text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 shadow-orange-500/50 hover:shadow-orange-400/50">
               Garantir meu Pack Agora!
             </Button>
           </div>

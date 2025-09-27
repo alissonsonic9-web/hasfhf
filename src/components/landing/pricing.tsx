@@ -41,7 +41,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter className="flex flex-col gap-4">
-              <Button size="lg" className="w-full text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 bg-green-600 text-white hover:bg-green-700">
+              <Button size="lg" className="w-full text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 bg-green-600 text-white hover:bg-green-700 shadow-green-500/50 hover:shadow-green-400/50">
                 GARANTIR O MEU AGORA!
               </Button>
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
