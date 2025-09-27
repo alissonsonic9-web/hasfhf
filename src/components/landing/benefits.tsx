@@ -62,6 +62,7 @@ const modules = [
   {
     icon: Library,
     title: 'Módulo 6 – Conceitos Teóricos Descomplicados e Aplicáveis',
+    imageUrl: 'https://i.postimg.cc/GhgVZbmg/teoria.png',
     content: [
       'Aprenda apenas a teoria musical que você realmente precisa.',
       'Conhecimento aplicado para você entender o que ouve e toca.',
@@ -109,7 +110,7 @@ export function Benefits() {
                       <Card className="flex flex-col h-full overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg">
                         <div className="relative w-full bg-muted aspect-square">
                           <Image
-                            src={module.imageUrl || `https://picsum.photos/seed/${index + 10}/600/400`}
+                            src={module.imageUrl || `https://picsum.photos/seed/${index + 10}/600/600`}
                             alt={module.title}
                             fill
                             className="object-cover"
@@ -144,7 +145,7 @@ export function Benefits() {
               <Card key={index} className="flex flex-col overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg transition-transform duration-300 hover:-translate-y-2">
                 <div className="relative w-full bg-muted aspect-square">
                   <Image
-                    src={module.imageUrl || `https://picsum.photos/seed/${index + 10}/600/400`}
+                    src={module.imageUrl || `https://picsum.photos/seed/${index + 10}/600/600`}
                     alt={module.title}
                     fill
                     className="object-cover"
@@ -171,7 +172,7 @@ export function Benefits() {
             ))}
           </div>
         </div>
-        <div className="flex justify-center mt-8 sm:mt-0">
+        <div className="flex justify-center mt-8 sm:mt-12">
           <a href="#pricing">
             <Button
               size="lg"
