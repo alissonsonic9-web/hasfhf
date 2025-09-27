@@ -9,7 +9,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from '@/components/ui/carousel';
-import { Ear, TrendingUp, FlaskConical, Music, Guitar, Library, AudioWaveform, Mic } from 'lucide-react';
+import { Ear, TrendingUp, FlaskConical, Music, Guitar, Library, AudioWaveform, Mic, CheckCircle2 } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
@@ -17,42 +17,66 @@ const modules = [
   {
     icon: Ear,
     title: 'Módulo 1 – Método Prático para Desenvolver o Ouvido Musical',
-    content: 'Você vai aprender a treinar o ouvido de forma intuitiva, reconhecendo acordes, riffs, frases, solos e arranjos em qualquer estilo. Tudo direto na escuta, sem depender de cifras ou partituras, desenvolvendo uma percepção musical mais natural.',
+    content: [
+      'Aprenda a treinar o ouvido de forma intuitiva, reconhecendo acordes, riffs, frases, solos e arranjos.',
+      'Tudo direto na escuta, sem depender de cifras ou partituras.',
+    ],
   },
   {
     icon: TrendingUp,
     title: 'Módulo 2 – Exercícios Progressivos que Funcionam em Qualquer Instrumento',
-    content: 'Uma sequência de treinos graduais pensados para se adaptar a qualquer instrumento — do violão ao sax, da guitarra ao teclado. Os exercícios foram planejados para serem aplicados em qualquer música e contexto, acelerando seu domínio musical.',
+    content: [
+      'Treinos graduais que se adaptam a qualquer instrumento (violão, sax, teclado, etc.).',
+      'Exercícios aplicáveis em qualquer música, acelerando seu domínio musical.',
+    ],
   },
   {
     icon: FlaskConical,
     title: 'Módulo 3 – Estufa de Percepção Auditiva na Prática',
-    content: 'Aqui a ideia é treinar o ouvido em profundidade, aprendendo a separar instrumentos dentro de uma faixa musical. Você vai desenvolver sensibilidade para reconhecer timbres, frequências e intensidades, aplicando isso diretamente na prática, sem excesso de teoria.',
+    content: [
+      'Aprenda a separar instrumentos dentro de uma música.',
+      'Desenvolva sensibilidade para reconhecer timbres, frequências e intensidades.',
+    ],
   },
   {
     icon: Music,
     title: 'Módulo 4 – Treinamento de Escuta com Músicas Reais',
-    content: 'Nada de exercícios abstratos: neste módulo, você vai praticar com músicas conhecidas de artistas como Cartola, Djavan, Lulu Santos, Garota de Ipanema e muito mais. Assim, além de treinar, você aplica o aprendizado tocando junto com canções de verdade.',
+    content: [
+      'Pratique com músicas conhecidas de artistas como Cartola, Djavan e Lulu Santos.',
+      'Aplique o aprendizado tocando junto com canções de verdade.',
+    ],
   },
   {
     icon: Guitar,
     title: 'Módulo 5 – Rotinas de Treino Técnico no Seu Instrumento',
-    content: 'Aprenda a dominar técnicas como vibratos, bends, ligados, palhetada alternada e tapping, sempre com foco em clareza, controle e fluidez. As rotinas foram organizadas para você evoluir no seu instrumento de forma sólida e progressiva.',
+    content: [
+      'Domine técnicas como vibratos, bends, ligados e palhetada alternada.',
+      'Rotinas organizadas para você evoluir de forma sólida e progressiva.',
+    ],
   },
   {
     icon: Library,
     title: 'Módulo 6 – Conceitos Teóricos Descomplicados e Aplicáveis',
-    content: 'A teoria musical aqui é simples e prática: apenas o que você realmente precisa para entender o que ouve e aplicar no seu instrumento. Escalas, harmonia e fundamentos são apresentados sem enrolação, para virar conhecimento aplicado e não apenas teoria decorada.',
+    content: [
+      'Aprenda apenas a teoria musical que você realmente precisa.',
+      'Conhecimento aplicado para você entender o que ouve e toca.',
+    ],
   },
   {
     icon: AudioWaveform,
     title: 'Módulo 7 – Guia para Transformar Qualquer Música em Aprendizado Técnico',
-    content: 'Cada música pode se tornar um exercício. Neste módulo você vai aprender a extrair solos, levadas, arranjos e acordes, mesmo quando parecem difíceis, usando uma abordagem que respeita seu tempo de evolução.',
+    content: [
+      'Aprenda a extrair solos, levadas e arranjos de qualquer música.',
+      'Uma abordagem que respeita seu tempo de evolução.',
+    ],
   },
   {
     icon: Mic,
     title: 'Módulo 8 – Método Flexível para Quem Toca em Diferentes Ambientes',
-    content: 'Seja tocando sozinho, em grupo, na igreja ou em bares, este método foi feito para se encaixar em qualquer cenário musical. O conteúdo é tão versátil que você pode aplicar no seu estudo individual ou até usar para ensinar, se for professor.',
+    content: [
+      'Aplique o método em qualquer cenário: sozinho, em grupo, na igreja ou em bares.',
+      'Conteúdo versátil que pode ser usado para estudo ou para ensinar.',
+    ],
   },
 ];
 
@@ -94,7 +118,14 @@ export function Benefits() {
                           <CardTitle className="text-base text-blue-900">{module.title}</CardTitle>
                         </CardHeader>
                         <CardContent className="flex-grow">
-                          <p className="text-sm text-muted-foreground font-black">{module.content}</p>
+                          <ul className="space-y-2">
+                            {module.content.map((item, i) => (
+                              <li key={i} className="flex items-start gap-2">
+                                <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 shrink-0" />
+                                <span className="text-sm text-muted-foreground font-black">{item}</span>
+                              </li>
+                            ))}
+                          </ul>
                         </CardContent>
                       </Card>
                     </div>
@@ -122,7 +153,14 @@ export function Benefits() {
                   <CardTitle className="text-base text-blue-900">{module.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <p className="text-sm text-muted-foreground font-black">{module.content}</p>
+                   <ul className="space-y-2">
+                    {module.content.map((item, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 shrink-0" />
+                        <span className="text-sm text-muted-foreground font-black">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </CardContent>
               </Card>
             ))}
@@ -132,7 +170,7 @@ export function Benefits() {
           <a href="#pricing">
             <Button
               size="lg"
-              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 mt-4 shadow-green-500/50 hover:shadow-green-400/50 animate-jump"
+              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 mt-4 animate-jump shadow-green-500/50 hover:shadow-green-400/50"
             >
               GARANTIR MEU PACK AGORA!
             </Button>
