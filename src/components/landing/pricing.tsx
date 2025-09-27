@@ -1,0 +1,60 @@
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
+import { Check, ShieldCheck } from 'lucide-react';
+
+const includedItems = [
+  'PDF COMPLETO DO MÉTODO TOCAR DE OUVIDO',
+  'EXERCÍCIOS DE PERCEPÇÃO AUDITIVA PASSO A PASSO',
+  'TREINOS COM MÚSICAS REAIS (LULU SANTOS, DJAVAN, ETC.)',
+  'GUIA PARA MONTAR SEUS PRÓPRIOS ARRANJOS',
+  'EXPLICAÇÕES DE TEORIA MUSICAL DESCOMPLICADA',
+  'SEM MENSALIDADE - ACESSO VITALÍCIO',
+  'GARANTIA DE 7 DIAS',
+  'BÔNUS: GUIA RÁPIDO: COMO TIRAR MÚSICAS EM 10 MINUTOS',
+  'BÔNUS: DICIONÁRIO DE ACORDES',
+];
+
+export function Pricing() {
+  return (
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-card">
+      <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
+        <div className="space-y-3">
+          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary-foreground font-semibold">OFERTA ESPECIAL</div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-primary">GARANTA HOJE!</h2>
+          <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Promoção de lançamento pode encerrar a qualquer momento. Não perca essa chance!
+          </p>
+        </div>
+        <div className="mx-auto w-full max-w-md">
+          <Card className="border-accent shadow-xl shadow-accent/10">
+            <CardHeader className="text-center pb-2">
+              <CardDescription className="text-2xl line-through text-muted-foreground">DE R$ 147,00</CardDescription>
+              <CardTitle className="text-2xl">POR APENAS</CardTitle>
+              <p className="text-7xl font-extrabold text-accent">R$19<span className="text-5xl font-bold">,90</span></p>
+              <p className="font-semibold text-lg">PAGAMENTO ÚNICO</p>
+            </CardHeader>
+            <CardContent className="space-y-4 text-left p-6">
+              <ul className="grid gap-2">
+                {includedItems.map((item, index) => (
+                  <li key={index} className="flex items-center gap-2">
+                    <Check className="h-5 w-5 text-accent" />
+                    <span className="text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+            <CardFooter className="flex flex-col gap-4">
+              <Button variant="accent" size="lg" className="w-full text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200">
+                GARANTIR O MEU AGORA!
+              </Button>
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <ShieldCheck className="h-4 w-4" />
+                <span>Compra 100% segura</span>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
+      </div>
+    </section>
+  );
+}
