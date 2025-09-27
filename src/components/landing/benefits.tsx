@@ -128,7 +128,7 @@ export function Benefits() {
             ))}
           </div>
         </div>
-        <div className="flex justify-center -mt-8 sm:mt-0">
+        <div className="flex justify-center -mt-16 sm:mt-0">
           <a href="#pricing">
             <Button
               size="lg"
