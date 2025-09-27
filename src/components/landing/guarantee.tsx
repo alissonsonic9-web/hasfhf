@@ -13,7 +13,7 @@ const GuaranteeSeal = () => (
       </text>
     </svg>
     <div className="absolute inset-0 flex items-center justify-center">
-      <div className="w-32 h-32 bg-green-500 rounded-full flex items-center justify-center">
+      <div className="w-32 h-32 bg-orange-500 rounded-full flex items-center justify-center">
         <span className="text-5xl font-bold text-white">07</span>
       </div>
     </div>
