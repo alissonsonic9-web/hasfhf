@@ -35,6 +35,7 @@ const modules = [
   {
     icon: FlaskConical,
     title: 'Módulo 3 – Estufa de Percepção Auditiva na Prática',
+    imageUrl: 'https://i.postimg.cc/zf7BrLHX/percepcao-corrigido.png',
     content: [
       'Aprenda a separar instrumentos dentro de uma música.',
       'Desenvolva sensibilidade para reconhecer timbres, frequências e intensidades.',
