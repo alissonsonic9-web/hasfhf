@@ -90,10 +90,10 @@ export function Benefits() {
                           <div className='p-3 bg-primary rounded-full inline-block self-start'>
                             <module.icon className="h-6 w-6 text-primary-foreground" />
                           </div>
-                          <CardTitle className="text-base text-card-foreground">{module.title}</CardTitle>
+                          <CardTitle className="text-base text-blue-900">{module.title}</CardTitle>
                         </CardHeader>
                         <CardContent className="flex-grow">
-                          <p className="text-sm text-muted-foreground font-bold">{module.content}</p>
+                          <p className="text-sm text-muted-foreground font-extrabold">{module.content}</p>
                         </CardContent>
                       </Card>
                     </div>
@@ -118,10 +118,10 @@ export function Benefits() {
                   <div className='p-3 bg-primary rounded-full inline-block self-start'>
                     <module.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-base text-card-foreground">{module.title}</CardTitle>
+                  <CardTitle className="text-base text-blue-900">{module.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <p className="text-sm text-muted-foreground font-bold">{module.content}</p>
+                  <p className="text-sm text-muted-foreground font-extrabold">{module.content}</p>
                 </CardContent>
               </Card>
             ))}
