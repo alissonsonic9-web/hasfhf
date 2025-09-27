@@ -166,11 +166,11 @@ export function Benefits() {
             ))}
           </div>
         </div>
-        <div className="flex justify-center -mt-16 sm:mt-0">
+        <div className="flex justify-center mt-4 sm:mt-0">
           <a href="#pricing">
             <Button
               size="lg"
-              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 mt-4 animate-jump shadow-green-500/50 hover:shadow-green-400/50"
+              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 animate-jump shadow-green-500/50 hover:shadow-green-400/50"
             >
               GARANTIR MEU PACK AGORA!
             </Button>
