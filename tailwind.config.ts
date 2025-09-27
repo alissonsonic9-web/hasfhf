@@ -91,10 +91,10 @@ export default {
         },
         jump: {
           '0%, 100%': {
-            transform: 'translateY(0)',
+            transform: 'scale(1)',
           },
           '50%': {
-            transform: 'translateY(-10px)',
+            transform: 'scale(1.05)',
           },
         },
       },
