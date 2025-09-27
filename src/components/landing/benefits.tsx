@@ -71,6 +71,7 @@ const modules = [
   {
     icon: AudioWaveform,
     title: 'Módulo 7 – Guia para Transformar Qualquer Música em Aprendizado Técnico',
+    imageUrl: 'https://i.postimg.cc/ryQPrqxk/SOLOS-E-ARRANJOS.png',
     content: [
       'Aprenda a extrair solos, levadas e arranjos de qualquer música.',
       'Uma abordagem que respeita seu tempo de evolução.',
