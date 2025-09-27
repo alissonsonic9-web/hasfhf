@@ -45,7 +45,7 @@ export function Modules() {
                 <CardTitle className="text-lg font-bold uppercase">{benefit.title}</CardTitle>
               </CardHeader>
               <CardContent className="text-center p-0 mt-2">
-                <p className="text-base text-muted-foreground font-headline">{benefit.description}</p>
+                <p className="text-base text-muted-foreground font-display">{benefit.description}</p>
               </CardContent>
             </Card>
           ))}
