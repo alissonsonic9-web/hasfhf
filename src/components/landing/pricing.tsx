@@ -23,7 +23,7 @@ export function Pricing() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">GARANTA HOJE!</h2>
         </div>
         <div className="mx-auto w-full max-w-md pt-12">
-          <Card className="bg-white text-black shadow-xl animate-bounce">
+          <Card className="bg-white text-black shadow-xl animate-pulse">
             <CardHeader className="text-center pb-2">
               <CardDescription className="text-2xl line-through text-muted-foreground">DE R$ 147,00</CardDescription>
               <CardTitle className="text-2xl text-black">POR APENAS</CardTitle>
