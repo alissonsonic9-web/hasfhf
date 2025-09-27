@@ -180,7 +180,7 @@ export function Benefits() {
               size="lg"
               className="w-full max-w-xs text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 animate-[jump_4s_ease-in-out_infinite] shadow-green-500/50 hover:shadow-green-400/50"
             >
-              GARANTIR MEU PACK AGORA!
+              QUERO APRENDER AGORA!
             </Button>
           </a>
         </div>
