@@ -9,7 +9,7 @@ const audience = [
 
 export function TargetAudience() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#1C1C1C] text-white">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#e0e0e0] text-black">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-8 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl uppercase">Esse material é para <span className="text-blue-500">você:</span></h2>
