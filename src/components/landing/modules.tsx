@@ -37,7 +37,7 @@ const getCardColors = (index: number) => {
       icon: 'text-orange-500',
       iconFill: '#f97316',
       title: '',
-      description: 'text-white/80',
+      description: 'text-white',
     };
   } else {
     // Blue cards
@@ -47,7 +47,7 @@ const getCardColors = (index: number) => {
       icon: 'text-accent-foreground',
       iconFill: 'white',
       title: 'text-white',
-      description: 'text-primary-foreground/80',
+      description: 'text-white',
     };
   }
 };
