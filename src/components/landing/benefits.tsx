@@ -1,10 +1,16 @@
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 import { Ear, TrendingUp, FlaskConical, Music, Guitar, Library, AudioWaveform, Mic } from 'lucide-react';
 import Image from 'next/image';
 
@@ -61,29 +67,71 @@ export function Benefits() {
             Uma jornada completa, do básico ao avançado, para você dominar a arte de tocar de ouvido.
           </p>
         </div>
-        <div className="mx-auto grid grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {modules.map((module, index) => (
-            <Card key={index} className="flex flex-col overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg transition-transform duration-300 hover:-translate-y-2">
-              <div className="relative h-48 w-full bg-muted">
-                <Image 
-                  src={`https://picsum.photos/seed/${index + 10}/600/400`}
-                  alt={module.title}
-                  fill
-                  className="object-cover"
-                  data-ai-hint="music lesson"
-                />
-              </div>
-              <CardHeader>
-                <div className='p-4 bg-primary rounded-full inline-block'>
-                  <module.icon className="h-6 w-6 text-primary-foreground" />
+        <div className="py-12">
+          <div className="sm:hidden">
+            <Carousel
+              opts={{
+                align: 'start',
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {modules.map((module, index) => (
+                  <CarouselItem key={index} className="basis-4/5">
+                    <div className="p-1">
+                      <Card className="flex flex-col h-full overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg">
+                        <div className="relative h-48 w-full bg-muted">
+                          <Image 
+                            src={`https://picsum.photos/seed/${index + 10}/600/400`}
+                            alt={module.title}
+                            fill
+                            className="object-cover"
+                            data-ai-hint="music lesson"
+                          />
+                        </div>
+                        <CardHeader>
+                          <div className='p-3 bg-primary rounded-full inline-block self-start'>
+                            <module.icon className="h-6 w-6 text-primary-foreground" />
+                          </div>
+                          <CardTitle className="text-base text-card-foreground">{module.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent className="flex-grow">
+                          <p className="text-sm text-muted-foreground">{module.content}</p>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2" />
+              <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2" />
+            </Carousel>
+          </div>
+          <div className="hidden sm:grid mx-auto grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {modules.map((module, index) => (
+              <Card key={index} className="flex flex-col overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                <div className="relative h-48 w-full bg-muted">
+                  <Image 
+                    src={`https://picsum.photos/seed/${index + 10}/600/400`}
+                    alt={module.title}
+                    fill
+                    className="object-cover"
+                    data-ai-hint="music lesson"
+                  />
                 </div>
-                <CardTitle className="text-base text-card-foreground">{module.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <CardDescription>{module.content}</CardDescription>
-              </CardContent>
-            </Card>
-          ))}
+                <CardHeader>
+                  <div className='p-3 bg-primary rounded-full inline-block self-start'>
+                    <module.icon className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <CardTitle className="text-base text-card-foreground">{module.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="text-sm text-muted-foreground">{module.content}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
