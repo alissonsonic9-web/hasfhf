@@ -39,7 +39,7 @@ export function Hero() {
       {/* Mobile View */}
       <div className="md:hidden relative w-full h-full">
         <Image
-          src="https://i.postimg.cc/HkmcTG3N/musica.webp"
+          src="https://i.postimg.cc/G2X6zshf/musica.jpg"
           alt="Aprenda a tocar de ouvido"
           fill
           className="object-cover"
