@@ -16,7 +16,7 @@ export function TargetAudience() {
         </div>
         <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6 py-12 sm:grid-cols-2">
           {audience.map((item, index) => (
-            <Card key={index} className="bg-[#D90429] rounded-2xl">
+            <Card key={index} className="bg-orange-500 rounded-2xl">
               <CardContent className="flex items-center justify-center p-6 h-full">
                 <p className="text-xl font-bold text-center text-white">{item}</p>
               </CardContent>
