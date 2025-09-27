@@ -57,13 +57,10 @@ const modules = [
 
 export function Benefits() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-500 text-white">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-orange-500 text-white">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">O que você vai ter acesso?</h2>
-          <p className="max-w-[900px] text-white/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Uma jornada completa, do básico ao avançado, para você dominar a arte de tocar de ouvido.
-          </p>
         </div>
         <div className="py-12">
           <div className="sm:hidden">
@@ -71,6 +68,7 @@ export function Benefits() {
               opts={{
                 align: 'start',
                 loop: true,
+                duration: 35,
               }}
               className="w-full"
             >
