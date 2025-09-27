@@ -4,7 +4,6 @@ import { Modules } from '@/components/landing/modules';
 import { TargetAudience } from '@/components/landing/target-audience';
 import { Bonuses } from '@/components/landing/bonuses';
 import { Pricing } from '@/components/landing/pricing';
-import { AIFeedback } from '@/components/landing/ai-feedback';
 import { Footer } from '@/components/landing/footer';
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
         <Hero />
         <Benefits />
         <Modules />
-        <AIFeedback />
         <TargetAudience />
         <Bonuses />
         <Pricing />
