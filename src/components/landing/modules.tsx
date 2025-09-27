@@ -1,86 +1,58 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
-import { Ear, TrendingUp, FlaskConical, Music2, Guitar, Library, AudioWaveform, Mic, Check } from 'lucide-react';
-import Image from 'next/image';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Ear, KeyRound, Lightbulb, Music, Guitar, School } from 'lucide-react';
 
-const modules = [
+const benefits = [
   {
-    icon: Ear,
-    title: 'Método Prático para Desenvolver o Ouvido Musical',
-    content: 'Você vai aprender a treinar o ouvido de forma intuitiva, reconhecendo acordes, riffs, frases, solos e arranjos em qualquer estilo. Tudo direto na escuta, sem depender de cifras ou partituras, desenvolvendo uma percepção musical mais natural.',
+    icon: <Music className="w-8 h-8 text-white" />,
+    title: 'Independência Total',
+    description: 'Toque qualquer música sem depender de cifra ou partitura. Chega de buscar acordes no Google.',
   },
   {
-    icon: TrendingUp,
-    title: 'Exercícios Progressivos que Funcionam em Qualquer Instrumento',
-    content: 'Uma sequência de treinos graduais pensados para se adaptar a qualquer instrumento — do violão ao sax, da guitarra ao teclado. Os exercícios foram planejados para serem aplicados em qualquer música e contexto, acelerando seu domínio musical.',
+    icon: <Ear className="w-8 h-8 text-white" />,
+    title: 'Desenvolva seu Ouvido',
+    description: 'Mesmo que você ache que "não nasceu com isso". Ouvir, entender e tocar — tudo isso pode ser treinado.',
   },
   {
-    icon: FlaskConical,
-    title: 'Estufa de Percepção Auditiva na Prática',
-    content: 'Aqui a ideia é treinar o ouvido em profundidade, aprendendo a separar instrumentos dentro de uma faixa musical. Você vai desenvolver sensibilidade para reconhecer timbres, frequências e intensidades, aplicando isso diretamente na prática, sem excesso de teoria.',
+    icon: <Guitar className="w-8 h-8 text-white" />,
+    title: 'Para Qualquer Instrumento',
+    description: 'Violão, teclado, flauta, sax, gaita... nosso método foi pensado para ser universal.',
   },
   {
-    icon: Music2,
-    title: 'Treinamento de Escuta com Músicas Reais',
-    content: 'Nada de exercícios abstratos: neste módulo, você vai praticar com músicas conhecidas de artistas como Cartola, Djavan, Lulu Santos, Garota de Ipanema e muito mais. Assim, além de treinar, você aplica o aprendizado tocando junto com canções de verdade.',
+    icon: <KeyRound className="w-8 h-8 text-white" />,
+    title: 'Liberdade Musical',
+    description: 'Ganhe independência como músico. Tocar de ouvido significa que você não depende mais de ninguém.',
   },
   {
-    icon: Guitar,
-    title: 'Rotinas de Treino Técnico no Seu Instrumento',
-    content: 'Aprenda a dominar técnicas como vibratos, bends, ligados, palhetada alternada e tapping, sempre com foco em clareza, controle e fluidez. As rotinas foram organizadas para você evoluir no seu instrumento de forma sólida e progressiva.',
+    icon: <Lightbulb className="w-8 h-8 text-white" />,
+    title: 'Criatividade e Improviso',
+    description: 'Quando o ouvido se desenvolve, a sua capacidade de improvisar flui com muito mais naturalidade.',
   },
   {
-    icon: Library,
-    title: 'Conceitos Teóricos Descomplicados e Aplicáveis',
-    content: 'A teoria musical aqui é simples e prática: apenas o que você realmente precisa para entender o que ouve e aplicar no seu instrumento. Escalas, harmonia e fundamentos são apresentados sem enrolação, para virar conhecimento aplicado e não apenas teoria decorada.',
-  },
-  {
-    icon: AudioWaveform,
-    title: 'Guia para Transformar Qualquer Música em Aprendizado Técnico',
-    content: 'Cada música pode se tornar um exercício. Neste módulo você vai aprender a extrair solos, levadas, arranjos e acordes, mesmo quando parecem difíceis, usando uma abordagem que respeita seu tempo de evolução.',
-  },
-  {
-    icon: Mic,
-    title: 'Método Flexível para Quem Toca em Diferentes Ambientes',
-    content: 'Seja tocando sozinho, em grupo, na igreja ou em bares, este método foi feito para se encaixar em qualquer cenário musical. O conteúdo é tão versátil que você pode aplicar no seu estudo individual ou até usar para ensinar, se for professor.',
+    icon: <School className="w-8 h-8 text-white" />,
+    title: 'Ensino Moderno',
+    description: 'Para professores que querem sair na frente, ensinando percepção auditiva de forma profissional.',
   },
 ];
 
 export function Modules() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-accent text-accent-foreground">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">O que você vai ter acesso?</h2>
-          <p className="max-w-[900px] text-primary-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Uma jornada completa, do básico ao avançado, para você dominar a arte de tocar de ouvido.
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Com esse material você terá!</h2>
+          <p className="max-w-[900px] text-accent-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Um conjunto de habilidades que vão transformar a sua relação com a música, independente do seu nível ou instrumento.
           </p>
         </div>
-        <div className="mx-auto grid grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {modules.map((module, index) => (
-            <Card key={index} className="flex flex-col overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg transition-transform duration-300 hover:-translate-y-2">
-              <div className="relative h-48 w-full bg-muted">
-                <Image 
-                  src={`https://picsum.photos/seed/${index + 10}/600/400`}
-                  alt={module.title}
-                  fill
-                  className="object-cover"
-                  data-ai-hint="music lesson"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle className="flex items-start gap-2 text-base">
-                  <Check className="h-5 w-5 flex-shrink-0 text-green-500 mt-0.5" />
-                  <span className='text-card-foreground'>{module.title}</span>
-                </CardTitle>
+        <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+          {benefits.map((benefit, index) => (
+            <Card key={index} className="bg-white/10 border-white/20 shadow-lg hover:shadow-white/20 transition-shadow duration-300">
+              <CardHeader className="flex flex-row items-center gap-4">
+                {benefit.icon}
+                <CardTitle className="text-xl text-white">{benefit.title}</CardTitle>
               </CardHeader>
-              <CardContent className="flex-grow">
-                <CardDescription>{module.content}</CardDescription>
+              <CardContent>
+                <p className="text-white/80">{benefit.description}</p>
               </CardContent>
             </Card>
           ))}
