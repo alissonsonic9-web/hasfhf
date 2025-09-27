@@ -37,7 +37,7 @@ export function Modules() {
         </div>
         <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 lg:grid-cols-2 lg:gap-8">
           {benefits.map((benefit, index) => (
-            <Card key={index} className="bg-card text-card-foreground shadow-lg rounded-2xl flex flex-col justify-center p-6">
+            <Card key={index} className="bg-card text-card-foreground shadow-lg rounded-3xl flex flex-col justify-center p-6">
               <CardHeader className="items-center text-center p-0">
                 <div className="bg-accent p-2 rounded-full mb-4">
                   <Star className="w-6 h-6 text-accent-foreground" fill="white" />
