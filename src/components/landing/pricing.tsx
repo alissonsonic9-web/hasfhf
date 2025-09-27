@@ -16,7 +16,7 @@ const includedItems = [
 
 export function Pricing() {
   return (
-    <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-blue-900 text-primary-foreground">
+    <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-[#2E435A] text-primary-foreground">
       <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
         <div className="space-y-3">
           <div className="inline-block rounded-lg bg-white/10 px-3 py-1 text-sm font-semibold">OFERTA ESPECIAL</div>
