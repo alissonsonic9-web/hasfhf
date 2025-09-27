@@ -33,7 +33,7 @@ export function Modules() {
     <section className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Com esse material você terá!</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Com esse <span className="text-orange-500">MATERIAL</span> você terá!</h2>
         </div>
         <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 lg:grid-cols-2 lg:gap-8">
           {benefits.map((benefit, index) => (
