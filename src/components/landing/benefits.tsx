@@ -93,7 +93,7 @@ export function Benefits() {
                           <CardTitle className="text-base text-card-foreground">{module.title}</CardTitle>
                         </CardHeader>
                         <CardContent className="flex-grow">
-                          <p className="text-sm text-muted-foreground">{module.content}</p>
+                          <p className="text-sm text-muted-foreground font-semibold">{module.content}</p>
                         </CardContent>
                       </Card>
                     </div>
@@ -121,7 +121,7 @@ export function Benefits() {
                   <CardTitle className="text-base text-card-foreground">{module.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <p className="text-sm text-muted-foreground">{module.content}</p>
+                  <p className="text-sm text-muted-foreground font-semibold">{module.content}</p>
                 </CardContent>
               </Card>
             ))}
