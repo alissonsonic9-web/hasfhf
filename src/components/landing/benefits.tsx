@@ -44,6 +44,7 @@ const modules = [
   {
     icon: Music,
     title: 'Módulo 4 – Treinamento de Escuta com Músicas Reais',
+    imageUrl: 'https://i.postimg.cc/mZCrL6HS/treino-com-msc-reais.png',
     content: [
       'Pratique com músicas conhecidas de artistas como Cartola, Djavan e Lulu Santos.',
       'Aplique o aprendizado tocando junto com canções de verdade.',
@@ -173,7 +174,7 @@ export function Benefits() {
           <a href="#pricing">
             <Button
               size="lg"
-              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 animate-pulse-slow shadow-green-500/50 hover:shadow-green-400/50"
+              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 animate-[jump_4s_ease-in-out_infinite] shadow-green-500/50 hover:shadow-green-400/50"
             >
               GARANTIR MEU PACK AGORA!
             </Button>
