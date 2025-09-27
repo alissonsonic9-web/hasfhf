@@ -9,7 +9,7 @@ const audience = [
 
 export function TargetAudience() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-card">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-accent text-accent-foreground">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl uppercase">Esse material é para você:</h2>
@@ -18,8 +18,8 @@ export function TargetAudience() {
           <ul className="space-y-6">
             {audience.map((item, index) => (
               <li key={index} className="flex items-start gap-4">
-                <CheckCircle2 className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
-                <span className="text-xl font-semibold text-foreground">{item}</span>
+                <CheckCircle2 className="h-6 w-6 text-white mt-1 flex-shrink-0" />
+                <span className="text-xl font-semibold">{item}</span>
               </li>
             ))}
           </ul>

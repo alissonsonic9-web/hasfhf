@@ -37,9 +37,9 @@ export function AIFeedback() {
   };
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
       <div className="container px-4 md:px-6">
-        <Card className="max-w-3xl mx-auto shadow-lg border-primary/20">
+        <Card className="max-w-3xl mx-auto shadow-lg bg-card text-card-foreground border-primary/20">
           <CardHeader className="text-center">
             <div className="mx-auto bg-primary/10 rounded-full p-3 w-fit mb-4">
               <Bot className="w-10 h-10 text-primary" />
@@ -95,7 +95,7 @@ export function AIFeedback() {
 
           </CardContent>
           <CardFooter className="flex justify-center">
-            <Button onClick={handleGetFeedback} disabled={isLoading} size="lg" className="font-bold">
+            <Button onClick={handleGetFeedback} disabled={isLoading} size="lg" className="font-bold bg-accent text-accent-foreground hover:bg-accent/90">
               <Mic className="mr-2 h-5 w-5" />
               {isLoading ? 'Analisando...' : 'Gravar e Analisar Performance'}
             </Button>

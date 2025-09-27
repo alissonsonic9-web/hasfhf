@@ -51,25 +51,25 @@ const modules = [
 
 export function Modules() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-card">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-accent text-accent-foreground">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">O que você vai ter acesso?</h2>
-          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="max-w-[900px] text-accent-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Uma jornada completa, do básico ao avançado, para você dominar a arte de tocar de ouvido.
           </p>
         </div>
         <div className="mx-auto max-w-3xl py-12">
           <Accordion type="single" collapsible className="w-full">
             {modules.map((module, index) => (
-              <AccordionItem value={`item-${index + 1}`} key={index}>
+              <AccordionItem value={`item-${index + 1}`} key={index} className="border-white/20">
                 <AccordionTrigger className="text-lg hover:no-underline">
                   <div className="flex items-center gap-4">
-                    <module.icon className="h-6 w-6 text-primary" />
-                    <span className="text-left">{module.title}</span>
+                    <module.icon className="h-6 w-6 text-white" />
+                    <span className="text-left text-white">{module.title}</span>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground pl-14">
+                <AccordionContent className="text-base text-white/80 pl-14">
                   {module.content}
                 </AccordionContent>
               </AccordionItem>
