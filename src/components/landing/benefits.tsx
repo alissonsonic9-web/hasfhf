@@ -57,7 +57,7 @@ const modules = [
 
 export function Benefits() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-orange-500 text-white">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-500 text-white">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">O que você vai ter acesso?</h2>
@@ -77,7 +77,7 @@ export function Benefits() {
               <CarouselContent>
                 {modules.map((module, index) => (
                   <CarouselItem key={index} className="basis-4/5">
-                    <div className="p-1">
+                    <div className="p-1 h-full">
                       <Card className="flex flex-col h-full overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg">
                         <div className="relative h-48 w-full bg-muted">
                           <Image 
