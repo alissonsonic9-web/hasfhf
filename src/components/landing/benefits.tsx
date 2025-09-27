@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/carousel';
 import { Ear, TrendingUp, FlaskConical, Music, Guitar, Library, AudioWaveform, Mic } from 'lucide-react';
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
 
 const modules = [
   {
@@ -93,7 +94,7 @@ export function Benefits() {
                           <CardTitle className="text-base text-blue-900">{module.title}</CardTitle>
                         </CardHeader>
                         <CardContent className="flex-grow">
-                          <p className="text-sm text-muted-foreground font-extrabold">{module.content}</p>
+                          <p className="text-sm text-muted-foreground font-black">{module.content}</p>
                         </CardContent>
                       </Card>
                     </div>
@@ -121,11 +122,21 @@ export function Benefits() {
                   <CardTitle className="text-base text-blue-900">{module.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <p className="text-sm text-muted-foreground font-extrabold">{module.content}</p>
+                  <p className="text-sm text-muted-foreground font-black">{module.content}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
+        </div>
+        <div className="flex justify-center">
+          <a href="#pricing">
+            <Button
+              size="lg"
+              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 bg-green-600 text-white hover:bg-green-700 mt-8"
+            >
+              GARANTIR MEU PACK AGORA!
+            </Button>
+          </a>
         </div>
       </div>
     </section>
