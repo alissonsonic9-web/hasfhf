@@ -34,7 +34,7 @@ export function Guarantee() {
             <p className="md:text-xl">
               Se dentro de 7 dias você não ficar satisfeito, devolvemos 100% do valor.
             </p>
-            <p className="text-white/90 font-semibold text-lg">
+            <p className="text-green-500 font-semibold text-lg">
               Sem perguntas. Sem burocracia.
             </p>
             <div className="flex items-center justify-center lg:justify-start gap-2 text-white/80">
