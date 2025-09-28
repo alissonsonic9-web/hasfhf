@@ -27,8 +27,8 @@ export function Pricing() {
             <CardHeader className="text-center pb-2">
               <div className="relative inline-block mx-auto mb-2">
                 <span className="text-2xl text-muted-foreground">DE R$ 147,00</span>
-                <div className="absolute top-1/2 left-[-10%] w-[120%] h-[5px] bg-red-600 transform -rotate-[10deg] rounded-full"></div>
-                <div className="absolute top-1/2 left-[-10%] w-[120%] h-[5px] bg-red-600 transform rotate-[10deg] rounded-full"></div>
+                <div className="absolute top-1/2 left-[-10%] w-0 h-[5px] bg-red-600 transform -rotate-[10deg] rounded-full animate-strike-through-1"></div>
+                <div className="absolute top-1/2 left-[-10%] w-0 h-[5px] bg-red-600 transform rotate-[10deg] rounded-full animate-strike-through-2"></div>
               </div>
               <CardTitle className="text-2xl text-black">POR APENAS</CardTitle>
               <p className="text-7xl font-extrabold text-orange-500">R$19<span className="text-5xl font-bold">,90</span></p>

@@ -97,11 +97,21 @@ export default {
             transform: 'scale(1.05)',
           },
         },
+        'strike-through-1': {
+          '0%': { width: '0%', left: '50%' },
+          '100%': { width: '120%', left: '-10%' },
+        },
+        'strike-through-2': {
+          '0%': { width: '0%', left: '50%' },
+          '100%': { width: '120%', left: '-10%' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         jump: 'jump 4s ease-in-out infinite',
+        'strike-through-1': 'strike-through-1 0.5s ease-out forwards',
+        'strike-through-2': 'strike-through-2 0.5s ease-out 0.3s forwards',
       },
     },
   },
