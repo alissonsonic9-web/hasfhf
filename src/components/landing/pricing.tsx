@@ -25,7 +25,11 @@ export function Pricing() {
         <div className="mx-auto w-full max-w-md pt-12">
           <Card className="bg-white text-black shadow-xl animate-jump">
             <CardHeader className="text-center pb-2">
-              <CardDescription className="text-2xl line-through text-muted-foreground">DE R$ 147,00</CardDescription>
+              <div className="relative inline-block mx-auto mb-2">
+                <span className="text-2xl text-muted-foreground">DE R$ 147,00</span>
+                <div className="absolute top-1/2 left-[-10%] w-[120%] h-[5px] bg-red-600 transform -rotate-[10deg] rounded-full"></div>
+                <div className="absolute top-1/2 left-[-10%] w-[120%] h-[5px] bg-red-600 transform rotate-[10deg] rounded-full"></div>
+              </div>
               <CardTitle className="text-2xl text-black">POR APENAS</CardTitle>
               <p className="text-7xl font-extrabold text-orange-500">R$19<span className="text-5xl font-bold">,90</span></p>
               <p className="font-semibold text-lg">PAGAMENTO ÚNICO</p>
@@ -35,11 +39,11 @@ export function Pricing() {
                 {includedItems.map((item, index) => (
                   <li key={index} className="flex items-center gap-2">
                     {item.startsWith('BÔNUS:') ? (
-                      <Gift className="h-5 w-5 text-[#3b82f6]" />
+                      <Gift className="h-5 w-5 text-[#1159A0]" />
                     ) : (
                       <Check className="h-5 w-5 text-green-500" />
                     )}
-                    <span className="text-sm font-bold text-[#3b82f6]">{item}</span>
+                    <span className="text-sm font-bold text-[#1159A0]">{item}</span>
                   </li>
                 ))}
               </ul>
