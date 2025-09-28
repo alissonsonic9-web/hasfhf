@@ -31,8 +31,8 @@ const benefits = [
 const cardColors = [
   'bg-accent text-accent-foreground', // Laranja
   'bg-accent text-accent-foreground', // Laranja
-  'bg-primary text-primary-foreground', // Azul
-  'bg-primary text-primary-foreground', // Azul
+  'bg-[#1C85FD] text-primary-foreground', // Azul
+  'bg-[#1C85FD] text-primary-foreground', // Azul
   'bg-accent text-accent-foreground', // Laranja
   'bg-accent text-accent-foreground', // Laranja
 ];
