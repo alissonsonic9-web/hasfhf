@@ -18,7 +18,7 @@ export function Bonuses() {
   ];
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white text-black">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#F8F8F8] text-black">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">Bônus Especiais</div>
