@@ -28,6 +28,15 @@ const benefits = [
   },
 ];
 
+const cardColors = [
+  'bg-accent text-accent-foreground', // Laranja
+  'bg-accent text-accent-foreground', // Laranja
+  'bg-primary text-primary-foreground', // Azul
+  'bg-primary text-primary-foreground', // Azul
+  'bg-accent text-accent-foreground', // Laranja
+  'bg-accent text-accent-foreground', // Laranja
+];
+
 export function Modules() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-white text-primary">
@@ -37,15 +46,15 @@ export function Modules() {
         </div>
         <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 lg:grid-cols-2 lg:gap-8">
           {benefits.map((benefit, index) => (
-              <Card key={index} className="shadow-lg rounded-3xl flex flex-col justify-center p-6 bg-secondary text-card-foreground">
+              <Card key={index} className={`shadow-lg rounded-3xl flex flex-col justify-center p-6 ${cardColors[index]}`}>
                 <CardHeader className="items-center text-center p-0">
-                  <div className="p-2 rounded-full mb-4 bg-primary">
-                    <Star className="w-6 h-6 text-accent" fill="var(--accent)" />
+                  <div className={`p-2 rounded-full mb-4 ${index < 2 || index > 3 ? 'bg-primary' : 'bg-accent'}`}>
+                    <Star className={`w-6 h-6 ${index < 2 || index > 3 ? 'text-accent' : 'text-primary'}`} fill={index < 2 || index > 3 ? 'var(--accent)' : 'var(--primary-foreground)'} />
                   </div>
-                  <CardTitle className="text-lg font-bold uppercase text-primary">{benefit.title}</CardTitle>
+                  <CardTitle className={`text-lg font-bold uppercase ${index < 2 || index > 3 ? 'text-white' : 'text-white'}`}>{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center p-0 mt-2">
-                  <p className="text-base font-extrabold text-black">{benefit.description}</p>
+                  <p className={`text-base font-extrabold ${index < 2 || index > 3 ? 'text-white' : 'text-white'}`}>{benefit.description}</p>
                 </CardContent>
               </Card>
             ))}
