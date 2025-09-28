@@ -49,12 +49,12 @@ export function Modules() {
               <Card key={index} className={`shadow-lg rounded-3xl flex flex-col justify-center p-6 ${cardColors[index]}`}>
                 <CardHeader className="items-center text-center p-0">
                   <div className={`p-2 rounded-full mb-4 ${index < 2 || index > 3 ? 'bg-primary' : 'bg-accent'}`}>
-                    <Star className={`w-6 h-6 ${index < 2 || index > 3 ? 'text-accent' : 'text-primary'}`} fill={index < 2 || index > 3 ? 'var(--accent)' : 'var(--primary-foreground)'} />
+                    <Star className={`w-6 h-6 ${index < 2 || index > 3 ? 'text-accent' : 'text-primary'}`} fill={index < 2 || index > 3 ? 'hsl(var(--accent))' : 'hsl(var(--primary))'} />
                   </div>
-                  <CardTitle className={`text-lg font-bold uppercase ${index < 2 || index > 3 ? 'text-white' : 'text-white'}`}>{benefit.title}</CardTitle>
+                  <CardTitle className="text-lg font-bold uppercase text-white">{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center p-0 mt-2">
-                  <p className={`text-base font-extrabold ${index < 2 || index > 3 ? 'text-white' : 'text-white'}`}>{benefit.description}</p>
+                  <p className="text-base font-extrabold text-white">{benefit.description}</p>
                 </CardContent>
               </Card>
             ))}
