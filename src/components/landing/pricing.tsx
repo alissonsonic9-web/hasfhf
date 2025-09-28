@@ -35,11 +35,11 @@ export function Pricing() {
                 {includedItems.map((item, index) => (
                   <li key={index} className="flex items-center gap-2">
                     {item.startsWith('BÔNUS:') ? (
-                      <Gift className="h-5 w-5 text-[#60a5fa]" />
+                      <Gift className="h-5 w-5 text-[#3b82f6]" />
                     ) : (
                       <Check className="h-5 w-5 text-green-500" />
                     )}
-                    <span className="text-sm font-bold text-[#60a5fa]">{item}</span>
+                    <span className="text-sm font-bold text-[#3b82f6]">{item}</span>
                   </li>
                 ))}
               </ul>
