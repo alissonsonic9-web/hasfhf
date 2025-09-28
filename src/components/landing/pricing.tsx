@@ -67,7 +67,7 @@ export function Pricing() {
                 ></div>
               </div>
               <CardTitle className="text-2xl text-black">POR APENAS</CardTitle>
-              <p className="text-7xl font-extrabold text-orange-500">R$19<span className="text-5xl font-bold">,90</span></p>
+              <p className="text-7xl font-extrabold text-orange-500">R$19,90</p>
               <p className="font-semibold text-lg">PAGAMENTO ÚNICO</p>
             </CardHeader>
             <CardContent className="space-y-4 text-left p-6">
