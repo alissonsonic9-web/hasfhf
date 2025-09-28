@@ -1,3 +1,6 @@
+"use client"
+
+import * as React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Check, Gift, ShieldCheck } from 'lucide-react';
@@ -15,6 +18,34 @@ const includedItems = [
 ];
 
 export function Pricing() {
+  const [isIntersecting, setIntersecting] = React.useState(false);
+  const cardRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIntersecting(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    const currentCardRef = cardRef.current;
+    if (currentCardRef) {
+      observer.observe(currentCardRef);
+    }
+
+    return () => {
+      if (currentCardRef) {
+        observer.unobserve(currentCardRef);
+      }
+    };
+  }, []);
+
   return (
     <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-[#2E435A] text-primary-foreground">
       <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
@@ -23,12 +54,20 @@ export function Pricing() {
           <p className="text-yellow-300">A promoção de lançamento pode encerrar a qualquer momento.</p>
         </div>
         <div className="mx-auto w-full max-w-md pt-12">
-          <Card className="bg-white text-black shadow-xl animate-jump">
+          <Card ref={cardRef} className="bg-white text-black shadow-xl animate-jump">
             <CardHeader className="text-center pb-2">
               <div className="relative inline-block mx-auto mb-2">
                 <span className="text-2xl text-muted-foreground">DE R$ 147,00</span>
-                <div className="absolute top-1/2 left-[-10%] w-0 h-[5px] bg-red-600 transform -rotate-[10deg] rounded-full animate-strike-through-1"></div>
-                <div className="absolute top-1/2 left-[-10%] w-0 h-[5px] bg-red-600 transform rotate-[10deg] rounded-full animate-strike-through-2"></div>
+                <div
+                  className={`absolute top-1/2 left-[-10%] w-0 h-[5px] bg-red-600 transform -rotate-[10deg] rounded-full ${
+                    isIntersecting ? 'animate-strike-through-1' : ''
+                  }`}
+                ></div>
+                <div
+                  className={`absolute top-1/2 left-[-10%] w-0 h-[5px] bg-red-600 transform rotate-[10deg] rounded-full ${
+                    isIntersecting ? 'animate-strike-through-2' : ''
+                  }`}
+                ></div>
               </div>
               <CardTitle className="text-2xl text-black">POR APENAS</CardTitle>
               <p className="text-7xl font-extrabold text-orange-500">R$19<span className="text-5xl font-bold">,90</span></p>
