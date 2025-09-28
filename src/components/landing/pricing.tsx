@@ -89,9 +89,11 @@ export function Pricing() {
                 <ShieldCheck className="h-4 w-4" />
                 <span>Compra 100% segura</span>
               </div>
-              <Button size="lg" className="w-full text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50">
-                GARANTIR O MEU AGORA!
-              </Button>
+              <a href="https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ" className="w-full">
+                <Button size="lg" className="w-full text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50">
+                  GARANTIR O MEU AGORA!
+                </Button>
+              </a>
             </CardFooter>
           </Card>
         </div>
