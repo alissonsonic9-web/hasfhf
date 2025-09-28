@@ -24,10 +24,7 @@ export function Pricing() {
   React.useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIntersecting(true);
-          observer.unobserve(entry.target);
-        }
+        setIntersecting(entry.isIntersecting);
       },
       {
         threshold: 0.5,
