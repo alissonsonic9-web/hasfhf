@@ -47,7 +47,7 @@ export function Pricing() {
     <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-[#2E435A] text-primary-foreground">
       <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
         <div className="space-y-3">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl uppercase">OFERTA ESPECIAL POR TEMPO LIMITADO!</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl uppercase">OFERTA ESPECIAL PARA GARANTIR HOJE!</h2>
           <p className="text-yellow-300">A promoção de lançamento pode encerrar a qualquer momento.</p>
         </div>
         <div className="mx-auto w-full max-w-md pt-12">
