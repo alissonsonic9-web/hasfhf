@@ -27,7 +27,7 @@ export function Bonuses() {
             Garantindo seu acesso hoje, você leva para casa dois bônus exclusivos que vão acelerar ainda mais a sua evolução musical.
           </p>
         </div>
-        <div className="mx-auto grid max-w-5xl items-center justify-center gap-8 py-12 sm:grid-cols-2">
+        <div className="mx-auto grid max-w-5xl items-start justify-center gap-8 py-12 sm:grid-cols-2">
           {bonusItems.map((bonus, index) => (
             <div key={index} className="flex flex-col items-center text-center gap-4">
                <div className="relative w-full max-w-[400px] aspect-square">
@@ -40,7 +40,7 @@ export function Bonuses() {
                   />
                </div>
                <div className="space-y-2">
-                <h3 className="text-2xl font-bold flex flex-col items-center justify-center gap-2 text-primary">
+                <h3 className="text-2xl font-bold flex items-center justify-center gap-2 text-primary">
                   <Gift className="w-8 h-8 text-accent" /> {bonus.title}
                 </h3>
                 <p className="text-lg text-gray-800">{bonus.description}</p>
