@@ -48,8 +48,8 @@ export function Modules() {
           {benefits.map((benefit, index) => (
               <Card key={index} className={`shadow-lg rounded-3xl flex flex-col justify-center p-6 ${cardColors[index]}`}>
                 <CardHeader className="items-center text-center p-0">
-                  <div className={`p-2 rounded-full mb-4 ${index < 2 || index > 3 ? 'bg-primary' : 'bg-accent'}`}>
-                    <Star className={`w-6 h-6 ${index < 2 || index > 3 ? 'text-accent' : 'text-primary'}`} fill={index < 2 || index > 3 ? 'hsl(var(--accent))' : 'hsl(var(--primary))'} />
+                  <div className="p-2 bg-white rounded-full mb-4">
+                    <Star className={`w-6 h-6 ${index === 2 || index === 3 ? 'text-accent' : 'text-primary'}`} fill={index === 2 || index === 3 ? 'hsl(var(--accent))' : 'hsl(var(--primary))'} />
                   </div>
                   <CardTitle className="text-lg font-bold uppercase text-white">{benefit.title}</CardTitle>
                 </CardHeader>
