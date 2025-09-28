@@ -39,7 +39,7 @@ const cardColors = [
 
 export function Modules() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#D1D8E3] text-primary">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#F8F8F8] text-primary">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Com esse <span className="text-accent">MATERIAL</span> você terá!</h2>
