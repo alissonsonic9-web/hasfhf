@@ -40,8 +40,8 @@ export function Bonuses() {
                   />
                </div>
                <div className="space-y-2">
-                <h3 className="text-2xl font-bold flex items-center justify-center gap-2 text-primary">
-                  <Gift className="w-7 h-7 text-accent" /> {bonus.title}
+                <h3 className="text-2xl font-bold flex flex-col sm:flex-row items-center justify-center gap-2 text-primary">
+                  <Gift className="w-8 h-8 text-accent" /> {bonus.title}
                 </h3>
                 <p className="text-lg text-gray-800">{bonus.description}</p>
                </div>
