@@ -90,7 +90,7 @@ const modules = [
 
 export function Benefits() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#ff9d33] text-white">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary text-card-foreground">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">O que você vai ter acesso?</h2>
@@ -123,7 +123,7 @@ export function Benefits() {
                           <div className='p-3 bg-primary rounded-full inline-block self-start'>
                             <module.icon className="h-6 w-6 text-primary-foreground" />
                           </div>
-                          <CardTitle className="text-base text-blue-900">{module.title}</CardTitle>
+                          <CardTitle className="text-base text-primary">{module.title}</CardTitle>
                         </CardHeader>
                         <CardContent className="flex-grow">
                           <ul className="space-y-2">
@@ -158,7 +158,7 @@ export function Benefits() {
                   <div className='p-3 bg-primary rounded-full inline-block self-start'>
                     <module.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-base text-blue-900">{module.title}</CardTitle>
+                  <CardTitle className="text-base text-primary">{module.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
                    <ul className="space-y-2">
@@ -177,8 +177,9 @@ export function Benefits() {
         <div className="flex justify-center mt-8 sm:mt-12">
           <a href="#pricing">
             <Button
+              variant="accent"
               size="lg"
-              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 animate-[jump_4s_ease-in-out_infinite] shadow-green-500/50 hover:shadow-green-400/50"
+              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg animate-[jump_4s_ease-in-out_infinite] shadow-orange-500/50 hover:shadow-orange-400/50"
             >
               QUERO APRENDER AGORA!
             </Button>

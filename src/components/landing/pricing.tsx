@@ -44,7 +44,7 @@ export function Pricing() {
   }, []);
 
   return (
-    <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-[#2E435A] text-primary-foreground">
+    <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
       <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
         <div className="space-y-3">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl uppercase">OFERTA ESPECIAL PARA GARANTIR HOJE!</h2>
@@ -67,7 +67,7 @@ export function Pricing() {
                 ></div>
               </div>
               <CardTitle className="text-2xl text-black">POR APENAS</CardTitle>
-              <p className="text-7xl font-extrabold text-orange-500">R$19,90</p>
+              <p className="text-7xl font-extrabold text-accent">R$19,90</p>
               <p className="font-semibold text-lg">PAGAMENTO ÚNICO</p>
             </CardHeader>
             <CardContent className="space-y-4 text-left p-6">
@@ -75,11 +75,11 @@ export function Pricing() {
                 {includedItems.map((item, index) => (
                   <li key={index} className="flex items-center gap-2">
                     {item.startsWith('BÔNUS:') ? (
-                      <Gift className="h-5 w-5 text-[#1159A0]" />
+                      <Gift className="h-5 w-5 text-primary" />
                     ) : (
                       <Check className="h-5 w-5 text-green-500" />
                     )}
-                    <span className={`text-sm font-bold ${item.startsWith('BÔNUS:') ? 'text-[#1159A0]' : 'text-black'}`}>{item}</span>
+                    <span className={`text-sm font-bold ${item.startsWith('BÔNUS:') ? 'text-primary' : 'text-black'}`}>{item}</span>
                   </li>
                 ))}
               </ul>
@@ -89,7 +89,7 @@ export function Pricing() {
                 <ShieldCheck className="h-4 w-4" />
                 <span>Compra 100% segura</span>
               </div>
-              <Button size="lg" className="w-full text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 bg-green-600 text-white hover:bg-green-700 shadow-green-500/50 hover:shadow-green-400/50">
+              <Button variant="accent" size="lg" className="w-full text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 shadow-orange-500/50 hover:shadow-orange-400/50">
                 GARANTIR O MEU AGORA!
               </Button>
             </CardFooter>

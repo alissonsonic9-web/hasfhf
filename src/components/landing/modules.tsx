@@ -28,55 +28,27 @@ const benefits = [
   },
 ];
 
-const getCardColors = (index: number) => {
-  if (index < 2 || index > 3) {
-    // Orange cards
-    return {
-      card: 'bg-orange-500 text-white',
-      iconContainer: 'bg-white',
-      icon: 'text-orange-500',
-      iconFill: '#f97316',
-      title: '',
-      description: 'text-white',
-    };
-  } else {
-    // Blue cards
-    return {
-      card: 'bg-primary text-primary-foreground',
-      iconContainer: 'bg-accent',
-      icon: 'text-accent-foreground',
-      iconFill: 'white',
-      title: 'text-white',
-      description: 'text-white',
-    };
-  }
-};
-
-
 export function Modules() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#2E435A] text-primary-foreground">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Com esse <span className="text-orange-500">MATERIAL</span> você terá!</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Com esse <span className="text-accent">MATERIAL</span> você terá!</h2>
         </div>
         <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 lg:grid-cols-2 lg:gap-8">
-          {benefits.map((benefit, index) => {
-            const colors = getCardColors(index);
-            return (
-              <Card key={index} className={`shadow-lg rounded-3xl flex flex-col justify-center p-6 ${colors.card}`}>
+          {benefits.map((benefit, index) => (
+              <Card key={index} className="shadow-lg rounded-3xl flex flex-col justify-center p-6 bg-secondary text-card-foreground">
                 <CardHeader className="items-center text-center p-0">
-                  <div className={`p-2 rounded-full mb-4 ${colors.iconContainer}`}>
-                    <Star className={`w-6 h-6 ${colors.icon}`} fill={colors.iconFill} />
+                  <div className="p-2 rounded-full mb-4 bg-primary">
+                    <Star className="w-6 h-6 text-accent" fill="var(--accent)" />
                   </div>
-                  <CardTitle className={`text-lg font-bold uppercase ${colors.title}`}>{benefit.title}</CardTitle>
+                  <CardTitle className="text-lg font-bold uppercase text-primary">{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center p-0 mt-2">
-                  <p className={`text-base font-extrabold ${colors.description}`}>{benefit.description}</p>
+                  <p className="text-base font-extrabold">{benefit.description}</p>
                 </CardContent>
               </Card>
-            );
-          })}
+            ))}
         </div>
       </div>
     </section>

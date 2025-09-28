@@ -18,12 +18,12 @@ export function Bonuses() {
   ];
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#fca951] text-black">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="inline-block rounded-lg bg-black/10 px-3 py-1 text-sm font-semibold text-black">Bônus Especiais</div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl uppercase text-black">E ainda tem mais...</h2>
-          <p className="max-w-[900px] text-black/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <div className="inline-block rounded-lg bg-black/10 px-3 py-1 text-sm font-semibold">Bônus Especiais</div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl uppercase">E ainda tem mais...</h2>
+          <p className="max-w-[900px] text-primary-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Garantindo seu acesso hoje, você leva para casa dois bônus exclusivos que vão acelerar ainda mais a sua evolução musical.
           </p>
         </div>
@@ -40,10 +40,10 @@ export function Bonuses() {
                   />
                </div>
                <div className="space-y-2">
-                <h3 className="text-2xl font-bold flex items-center justify-center gap-2 text-black">
-                  <Gift className="w-7 h-7 text-primary" /> {bonus.title}
+                <h3 className="text-2xl font-bold flex items-center justify-center gap-2">
+                  <Gift className="w-7 h-7 text-accent" /> {bonus.title}
                 </h3>
-                <p className="text-lg text-black/90">{bonus.description}</p>
+                <p className="text-lg text-primary-foreground/90">{bonus.description}</p>
                </div>
             </div>
           ))}
