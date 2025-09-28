@@ -120,7 +120,7 @@ export function Benefits() {
                           />
                         </div>
                         <CardHeader>
-                          <div className='p-3 bg-primary rounded-full inline-block self-start'>
+                          <div className='p-3 bg-[#1C85FD] rounded-full inline-block self-start'>
                             <module.icon className="h-6 w-6 text-primary-foreground" />
                           </div>
                           <CardTitle className="text-base text-primary">{module.title}</CardTitle>
@@ -155,7 +155,7 @@ export function Benefits() {
                   />
                 </div>
                 <CardHeader>
-                  <div className='p-3 bg-primary rounded-full inline-block self-start'>
+                  <div className='p-3 bg-[#1C85FD] rounded-full inline-block self-start'>
                     <module.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <CardTitle className="text-base text-primary">{module.title}</CardTitle>
