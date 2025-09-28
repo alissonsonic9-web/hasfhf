@@ -9,10 +9,10 @@ const audience = [
 
 export function TargetAudience() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white text-black">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#1C4D82] text-white">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-8 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl uppercase">Esse material é para <span className="text-primary">você:</span></h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl uppercase">Esse material é para <span className="text-accent">você:</span></h2>
         </div>
         <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6 py-12 sm:grid-cols-2">
           {audience.map((item, index) => (
