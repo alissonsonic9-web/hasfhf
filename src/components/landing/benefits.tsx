@@ -177,9 +177,8 @@ export function Benefits() {
         <div className="flex justify-center mt-8 sm:mt-12">
           <a href="#pricing">
             <Button
-              variant="accent"
               size="lg"
-              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg animate-[jump_4s_ease-in-out_infinite] shadow-orange-500/50 hover:shadow-orange-400/50"
+              className="w-full max-w-xs text-lg font-bold uppercase shadow-lg animate-[jump_4s_ease-in-out_infinite] bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50"
             >
               QUERO APRENDER AGORA!
             </Button>
