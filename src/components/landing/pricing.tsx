@@ -79,7 +79,7 @@ export function Pricing() {
                     ) : (
                       <Check className="h-5 w-5 text-green-500" />
                     )}
-                    <span className="text-sm font-bold text-[#1159A0]">{item}</span>
+                    <span className={`text-sm font-bold ${item.startsWith('BÔNUS:') ? 'text-[#1159A0]' : 'text-black'}`}>{item}</span>
                   </li>
                 ))}
               </ul>
