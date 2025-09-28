@@ -85,7 +85,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter className="flex flex-col gap-4">
-              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+              <div className="flex items-center gap-2 text-xs text-red-500">
                 <ShieldCheck className="h-4 w-4" />
                 <span>Compra 100% segura</span>
               </div>
