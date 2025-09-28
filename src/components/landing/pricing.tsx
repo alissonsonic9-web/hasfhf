@@ -73,11 +73,11 @@ export function Pricing() {
             <CardContent className="space-y-4 text-left p-6">
               <ul className="grid gap-2">
                 {includedItems.map((item, index) => (
-                  <li key={index} className="flex items-center gap-2">
+                  <li key={index} className="flex items-start gap-2">
                     {item.startsWith('BÔNUS:') ? (
-                      <Gift className="h-5 w-5 text-primary" />
+                      <Gift className="h-5 w-5 text-primary mt-1 shrink-0" />
                     ) : (
-                      <Check className="h-5 w-5 text-green-500" />
+                      <Check className="h-5 w-5 text-green-500 mt-1 shrink-0" />
                     )}
                     <span className={`text-sm font-bold ${item.startsWith('BÔNUS:') ? 'text-primary' : 'text-black'}`}>{item}</span>
                   </li>
