@@ -45,11 +45,16 @@ export function Modules() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Com esse <span className="text-accent">MATERIAL</span> você terá!</h2>
         </div>
         <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 lg:grid-cols-2 lg:gap-8">
-          {benefits.map((benefit, index) => (
+          {benefits.map((benefit, index) => {
+            const isBlueCard = index === 2 || index === 3;
+            return (
               <Card key={index} className={`shadow-lg rounded-3xl flex flex-col justify-center p-6 ${cardColors[index]}`}>
                 <CardHeader className="items-center text-center p-0">
-                  <div className="p-2 bg-white rounded-full mb-4">
-                    <Star className={`w-6 h-6 ${index === 2 || index === 3 ? 'text-primary' : 'text-accent'}`} fill={index === 2 || index === 3 ? 'hsl(var(--primary))' : 'hsl(var(--accent))'} />
+                  <div className={`p-2 rounded-full mb-4 ${isBlueCard ? 'bg-accent' : 'bg-white'}`}>
+                    <Star
+                      className={`w-6 h-6 ${isBlueCard ? 'text-white' : 'text-accent'}`}
+                      fill={isBlueCard ? 'white' : 'hsl(var(--accent))'}
+                    />
                   </div>
                   <CardTitle className="text-lg font-bold uppercase text-white">{benefit.title}</CardTitle>
                 </CardHeader>
@@ -57,7 +62,8 @@ export function Modules() {
                   <p className="text-base font-extrabold text-white">{benefit.description}</p>
                 </CardContent>
               </Card>
-            ))}
+            );
+          })}
         </div>
       </div>
     </section>
