@@ -4,7 +4,6 @@ import * as React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Check, Gift, ShieldCheck } from 'lucide-react';
-import { useRouter } from 'next/navigation';
 
 const includedItems = [
   'PDF COMPLETO DO MÉTODO TOCAR DE OUVIDO',
@@ -21,7 +20,6 @@ const includedItems = [
 export function Pricing() {
   const [isIntersecting, setIntersecting] = React.useState(false);
   const cardRef = React.useRef<HTMLDivElement>(null);
-  const router = useRouter();
 
   React.useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,10 +42,6 @@ export function Pricing() {
       }
     };
   }, []);
-  
-  const handleCheckout = () => {
-    router.push('https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ');
-  };
 
   return (
     <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
@@ -91,13 +85,14 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter className="flex flex-col gap-4">
-              <Button 
-                size="lg" 
-                className="w-full text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50"
-                onClick={handleCheckout}
-              >
-                GARANTIR O MEU AGORA!
-              </Button>
+              <a href="https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ" className="w-full">
+                <Button 
+                  size="lg" 
+                  className="w-full text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50"
+                >
+                  GARANTIR O MEU AGORA!
+                </Button>
+              </a>
               <div className="flex items-center gap-2 text-xs text-red-500">
                 <ShieldCheck className="h-4 w-4" />
                 <span>Compra 100% segura</span>
