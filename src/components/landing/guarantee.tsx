@@ -7,7 +7,7 @@ const GuaranteeSeal = () => (
         <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
       </defs>
       <text>
-        <textPath href="#circlePath" className="text-2xl font-bold uppercase fill-primary/80 tracking-wider" startOffset="50%" text-anchor="middle">
+        <textPath href="#circlePath" className="text-2xl font-bold uppercase fill-primary/80 tracking-wider" startOffset="50%" textAnchor="middle">
           Garantia de 7 dias • Garantia de 7 dias •
         </textPath>
       </text>
