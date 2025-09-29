@@ -85,7 +85,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter className="flex flex-col gap-4">
-              <a href="https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ" className="w-full">
+              <a href="https://verdant-malasada-0bb41c.netlify.app/" className="w-full">
                 <Button size="lg" className="w-full text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50">
                   GARANTIR O MEU AGORA!
                 </Button>
