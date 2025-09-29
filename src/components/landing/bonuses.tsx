@@ -37,6 +37,7 @@ export function Bonuses() {
                     fill
                     className="object-contain"
                     data-ai-hint="music guide"
+                    sizes="(max-width: 640px) 100vw, 50vw"
                   />
                </div>
                <div className="space-y-2">

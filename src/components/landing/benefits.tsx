@@ -117,6 +117,7 @@ export function Benefits() {
                             fill
                             className="object-cover"
                             data-ai-hint="music lesson"
+                            sizes="(max-width: 640px) 80vw, (max-width: 768px) 50vw, 33vw"
                           />
                         </div>
                         <CardHeader>
@@ -152,6 +153,7 @@ export function Benefits() {
                     fill
                     className="object-cover"
                     data-ai-hint="music lesson"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
                 <CardHeader>

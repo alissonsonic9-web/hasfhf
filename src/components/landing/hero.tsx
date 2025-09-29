@@ -47,7 +47,7 @@ export function Hero() {
             fill
             className="object-contain"
             priority
-            quality={100}
+            quality={80}
           />
         </div>
       </div>
