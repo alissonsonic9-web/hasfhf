@@ -73,12 +73,14 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter className="flex flex-col gap-4">
-              <a
-                href="https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ"
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 w-full text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50"
-              >
-                GARANTIR O MEU AGORA!
-              </a>
+              <Button asChild size="lg" className="w-full text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50">
+                <a
+                  href="https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ"
+                  aria-label="Ir para o checkout e garantir agora"
+                >
+                  GARANTIR O MEU AGORA!
+                </a>
+              </Button>
               <div className="flex items-center gap-2 text-xs text-red-500">
                 <ShieldCheck className="h-4 w-4" />
                 <span>Compra 100% segura</span>
