@@ -1,15 +1,14 @@
 "use client";
 
-import { Button } from '@/components/ui/button';
+import { Check, Gift, ShieldCheck } from 'lucide-react';
 import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
-  CardFooter,
 } from '@/components/ui/card';
-import { Check, Gift, ShieldCheck } from 'lucide-react';
 
 const includedItems = [
   'PDF COMPLETO DO MÉTODO TOCAR DE OUVIDO',
@@ -73,18 +72,13 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter className="flex flex-col gap-4">
-              <Button
-                asChild
-                size="lg"
-                className="w-full text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50"
-              >
-                <a
+               <a
                   href="https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ"
                   aria-label="Ir para o checkout e garantir agora"
+                  className="inline-flex h-11 items-center justify-center rounded-md px-8 w-full text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50"
                 >
                   GARANTIR O MEU AGORA!
                 </a>
-              </Button>
               <div className="flex items-center gap-2 text-xs text-red-500">
                 <ShieldCheck className="h-4 w-4" />
                 <span>Compra 100% segura</span>
