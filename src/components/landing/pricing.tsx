@@ -77,7 +77,7 @@ export function Pricing() {
                   aria-label="Ir para o checkout e garantir agora"
                   className="inline-flex h-11 items-center justify-center rounded-md px-8 w-full text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50"
                 >
-                  GARANTIR O MEU AGORA!
+                  <button>GARANTIR O MEU AGORA!</button>
                 </a>
               <div className="flex items-center gap-2 text-xs text-red-500">
                 <ShieldCheck className="h-4 w-4" />
