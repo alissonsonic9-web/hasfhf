@@ -1,25 +1,20 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-bg');
-
   return (
-    <section className="relative w-full text-center text-white overflow-hidden md:h-[80vh] md:min-h-[500px] md:flex md:items-center md:justify-center">
+    <section className="relative w-full text-center text-white overflow-hidden">
       {/* Desktop View */}
-      <div className="hidden md:block w-full h-full">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            data-ai-hint={heroImage.imageHint}
-            priority
-          />
-        )}
+      <div className="hidden md:block md:h-[80vh] md:min-h-[500px] md:relative">
+        <Image
+          src="https://images.unsplash.com/photo-1627407660893-fe01f60d44c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtdXNpYyUyMHN0dWRpb3xlbnwwfHx8fDE3NTg5MDgxMjl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+          alt="A dark and moody shot of a music studio with various instruments."
+          fill
+          className="object-cover"
+          data-ai-hint="music studio"
+          priority
+        />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 container px-4 md:px-6 flex flex-col items-center justify-center h-full">
           <div className="flex flex-col items-center space-y-6">
