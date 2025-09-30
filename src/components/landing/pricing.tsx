@@ -38,7 +38,7 @@ export function Pricing() {
           </p>
         </div>
         <div className="mx-auto w-full max-w-md pt-12">
-          <Card className="bg-white text-black shadow-xl">
+          <Card className="bg-white text-black shadow-xl animate-jump">
             <CardHeader className="text-center pb-2">
               <div className="relative inline-block mx-auto mb-2">
                 <span className="text-2xl text-muted-foreground line-through">
