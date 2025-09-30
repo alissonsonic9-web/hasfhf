@@ -28,7 +28,7 @@ export function Pricing() {
       id="pricing"
       className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground"
     >
-      <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
+      <div className="container grid items-center justify-center gap-4 text-center">
         <div className="space-y-3">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl uppercase">
             OFERTA ESPECIAL PARA GARANTIR HOJE!
@@ -37,7 +37,7 @@ export function Pricing() {
             A promoção de lançamento pode encerrar a qualquer momento.
           </p>
         </div>
-        <div className="mx-auto max-w-md pt-12">
+        <div className="mx-auto max-w-md w-full pt-12">
           <Card className="bg-white text-black shadow-xl">
             <CardHeader className="text-center pb-2">
               <div className="relative inline-block mx-auto mb-2">
@@ -72,7 +72,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter className="flex flex-col gap-4">
-               <a href="https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-full text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50 h-11 px-8 animate-[jump_4s_ease-in-out_infinite]">
+               <a href="https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-full text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50 h-11 px-8">
                 GARANTIR O MEU AGORA!
                </a>
               <div className="flex items-center gap-2 text-xs text-red-500">
