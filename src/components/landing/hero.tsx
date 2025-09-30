@@ -29,7 +29,7 @@ export function Hero() {
             <p className="max-w-[700px] text-lg text-neutral-200 md:text-xl">
               Chega de buscar acordes no Google a cada nova música. Desenvolva seu ouvido musical e ganhe a liberdade que você sempre quis.
             </p>
-            <a href="https://verdant-malasada-0bb41c.netlify.app/">
+            <a href="https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ">
               <Button size="lg" className="text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50">
                 Garantir meu Pack Agora!
               </Button>
@@ -59,7 +59,7 @@ export function Hero() {
             <p className="text-base text-neutral-200">
               Chega de buscar acordes no Google a cada nova música. Desenvolva seu ouvido musical e ganhe a liberdade que você sempre quis.
             </p>
-            <a href="https://verdant-malasada-0bb41c.netlify.app/" className="block">
+            <a href="https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ" className="block">
               <Button size="lg" className="w-full text-lg font-bold uppercase shadow-lg bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50">
                 Garantir meu Pack Agora!
               </Button>
