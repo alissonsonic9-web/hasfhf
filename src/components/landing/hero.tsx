@@ -25,11 +25,12 @@ export function Hero() {
             <p className="max-w-[700px] text-lg text-neutral-200 md:text-xl">
               Chega de buscar acordes no Google a cada nova música. Desenvolva seu ouvido musical e ganhe a liberdade que você sempre quis.
             </p>
-            <Button asChild size="lg" className="text-lg font-bold uppercase shadow-lg hover:scale-105 transition-transform duration-200 bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50">
-              <Link href="https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ">
-                Garantir meu Pack Agora!
-              </Link>
-            </Button>
+            <Link
+              href="https://www.ggcheckout.com/checkout/v2/dd3YcDfmJ9793x2ccCRZ"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 text-lg font-bold uppercase shadow-lg hover:scale-105 transform-gpu transition-transform duration-200 bg-green-600 text-white hover:bg-green-700 shadow-green-600/50 hover:shadow-green-500/50"
+            >
+              GARANTIR MEU PACK AGORA!
+            </Link>
           </div>
         </div>
       </div>
