@@ -37,7 +37,7 @@ export function Pricing() {
             A promoção de lançamento pode encerrar a qualquer momento.
           </p>
         </div>
-        <div className="mx-auto w-full max-w-md pt-12">
+        <div className="mx-auto w-full max-w-md pt-12 px-4">
           <Card className="bg-white text-black shadow-xl animate-jump">
             <CardHeader className="text-center pb-2">
               <div className="relative inline-block mx-auto mb-2">
